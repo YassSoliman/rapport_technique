@@ -4687,3 +4687,30 @@ input, select, textarea {
 		}
 
 	}
+
+	
+
+	@media print {
+		@page {
+			size: A4 portrait;
+		}
+
+		#main {
+			max-width: 100%;
+			line-height: 2;
+			font-size: 0.75rem;
+		}
+		#main > .post {
+			padding: 0;
+		}
+		#main > .post header.major > h1, #main > .post header.major h2 {
+			font-size: 2rem;
+		}
+
+		h2 {
+			font-size: 1.25rem;
+		}
+
+	}
+
+	
