@@ -12,6 +12,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	<link rel="stylesheet" href="assets/css/bootstrap.css" />
 	<link rel="stylesheet" href="assets/css/main.css" />
+	<link rel="stylesheet" href="assets/css/prism.css" />
 	<noscript>
 		<link rel="stylesheet" href="assets/css/noscript.css" />
 	</noscript>
@@ -27,13 +28,14 @@
 			<h1>Rapport Technique</h1>
 			<p>Par : Yasser Soliman</p>
 			<ul class="actions">
-				<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continuer</a></li>
+				<li><a target="_blank" href="#header" class="button icon solid solo fa-arrow-down scrolly">Continuer</a>
+				</li>
 			</ul>
 		</div>
 
 		<!-- Header -->
 		<header id="header">
-			<a href="index.html" class="logo">Rapport Technique</a>
+			<a target="_blank" href="index.html" class="logo">Rapport Technique</a>
 		</header>
 
 		<!-- Main -->
@@ -57,14 +59,14 @@
 
 				<div class="row align-items-center">
 					<div class="col-5 p-0">
-						<img class="img-fluid" src="images/512x384_VSCodeWelcome.png"
+						<img class="img-fluid border" src="images/512x384_VSCodeWelcome.png"
 							alt="Image de l'écran principale de Visual Studio Code">
 					</div>
 					<div class="col-2 p-0">
 						<img class="img-fluid" src="images/162x245_versus.png" alt="Image de v/s (versus)">
 					</div>
 					<div class="col-5 p-0">
-						<img class="img-fluid" src="images/511x385_NetBeansWelcome.png"
+						<img class="img-fluid border" src="images/511x385_NetBeansWelcome.png"
 							alt="Image de l'écran principale de NetBeans">
 					</div>
 				</div>
@@ -77,8 +79,10 @@
 					trouver à la page web du module d'extension.
 
 				</p>
+
 				<h4>
-					<a href="https://marketplace.visualstudio.com/items?itemName=bmewburn.vscode-intelephense-client">
+					<a target="_blank"
+						href="https://marketplace.visualstudio.com/items?itemName=bmewburn.vscode-intelephense-client">
 						PHP Intelephense
 					</a>
 				</h4>
@@ -95,7 +99,7 @@
 					</tr>
 					<tr>
 						<td>
-							<img class="img-fluid" src="images/VSCGoToDef.gif"
+							<img class="img-fluid border" src="images/VSCGoToDef.gif"
 								alt="GIF d'un curseur qui fait un clique droit et appuye sur 'Go To Definition' d'une fonction PHP et sa redirige vers la fonction">
 						</td>
 					</tr>
@@ -106,67 +110,699 @@
 					</tr>
 					<tr>
 						<td>
-							<img class="img-fluid" src="images/VSCGoToRef.gif"
+							<img class="img-fluid border" src="images/VSCGoToRef.gif"
 								alt="GIF d'un curseur qui fait un clique droit et appuye sur 'Go To Reference' d'une fonction PHP et il y a une liste de tout les references de cette fonction qui apparait">
 						</td>
 					</tr>
 				</table>
+
 				<h4>
-					<a href="https://marketplace.visualstudio.com/items?itemName=liximomo.sftp">
+					<a target="_blank" href="https://marketplace.visualstudio.com/items?itemName=liximomo.sftp">
 						SFTP
 					</a>
 				</h4>
-				<p></p>
+				<p>
+					Comme qu'on travaillait avec le protocole FTP chez Mediavore, il me fallait une manière de
+					sauvegarder mon code dans le serveur FTP de l'entreprise à chaque fois que je sauvegardais mon code
+					pour pouvoir voir changement sur le site de développement rapidement. Le module SFTP sert exactement
+					à ça. L'outil nous permet de configurer comment qu'on veut qu'il agisse avec un fichier de format
+					JSON.
+				</p>
+				<table>
+					<tr>
+						<td>
+							<span class="fw-bold">
+								Example de configuration SFTP
+							</span>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<img src="images/VSCSFTPConfig.gif"
+								alt="GIF qui montre comment acceder a la configuration de SFTP et un exemple de la configuration">
+						</td>
+					</tr>
+				</table>
 
 				<h4>
-					<a href="https://marketplace.visualstudio.com/items?itemName=vscodevim.vim">
+					<a target="_blank" href="https://marketplace.visualstudio.com/items?itemName=vscodevim.vim">
 						Vim
 					</a>
 				</h4>
-
-
+				<p>
+					Le module d'extension de Vim nous permet d'utiliser Visual Studio Code avec des commandes Vim. C'est
+					très utile si un individu est compétent ou cherche à obtenir de l'expérience avec Vim. J'ai ajouté
+					ce module par préférence. Je trouve que Vim me permet de programmer plus efficacement. C'est aussi
+					très intéressant trouver des manières plus efficaces de faire une même tache.
+				</p>
+				<table>
+					<tr>
+						<td>
+							<span class="fw-bold">
+								Exemple d'utilisation de Vim dans Visual Studio Code
+							</span>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<img src="images/VSCSVimWorflow.gif"
+								alt="GIF qui montre un exemple visuel d'utilisation de Vim dans Visual Studio Code">
+						</td>
+					</tr>
+				</table>
 
 				<h2>Languages de programmation</h2>
-				<p>Donec sit amet pretium diam, eu placerat ligula. Nam molestie efficitur condimentum. Suspendisse nec
-					malesuada ligula, et ultricies leo. Proin sodales est sed nisl lacinia, id tincidunt lorem suscipit.
-					Morbi et neque diam. Donec augue turpis, tempus a ex ac, dictum semper elit. Quisque nec eros
-					interdum, ullamcorper est quis, euismod enim. Etiam ullamcorper eget libero rhoncus sollicitudin.
-					Integer at nibh sagittis dui blandit dictum. Phasellus mattis odio ac finibus blandit. Fusce non dui
-					vitae dui tempor condimentum. Vivamus maximus neque vitae felis ornare, vel posuere nibh eleifend.
-					Donec finibus nunc quis nibh convallis tincidunt ut id tellus. Nunc ornare convallis feugiat.
+				<p>
+					Durant mon stage chez Mediavore j'ai utilisé HTML, CSS avec BootStrap 5, JavaScript avec jQuery,
+					MySQL, PHP avec le cadriciel CodeIgniter 3. C'est des langages qu'on a couvert à l'école donc
+					j'avais déjà de la familiarité avec. Par contre, le cadriciel de CodeIgniter 3 était une nouvelle
+					technologie. Bien sûr j'avais déjà des connaissances sur CakePHP qui est un autre cadriciel PHP,
+					mais il y a beaucoup de différences entre les deux.
 				</p>
 
 				<h2>CodeIgniter 3</h2>
-				<table>
+				<table style="table-layout: fixed; width: 100%;">
 					<tbody>
 						<tr>
-							<td>Avantages</td>
-							<td>Inconvenients</td>
+							<td class="fw-bold">Avantages</td>
+							<td class="fw-bold">Inconvenients</td>
 						</tr>
 						<tr>
-							<td>Test</td>
-							<td>Test</td>
+							<td>Très légers comme cadriciel</td>
+							<td>Ne contiens pas toutes les librairies que d'autres cadriciels tels que Laravel offrent
+							</td>
+						</tr>
+						<tr>
+							<td>Documentation très simple et claire</td>
+							<td>Il faut développer beaucoup d'outils et tout les documenter</td>
+						</tr>
+						<tr>
+							<td>Très facile à apprendre pour un nouveau programmeur</td>
+							<td>Un programmeur qui vient de Laravel peut penser qu'il manque des fonctionnalités à
+								CodeIgniter 3</td>
 						</tr>
 					</tbody>
 				</table>
-				<p>Donec sit amet pretium diam, eu placerat ligula. Nam molestie efficitur condimentum. Suspendisse nec
-					malesuada ligula, et ultricies leo. Proin sodales est sed nisl lacinia, id tincidunt lorem suscipit.
-					Morbi et neque diam. Donec augue turpis, tempus a ex ac, dictum semper elit. Quisque nec eros
-					interdum, ullamcorper est quis, euismod enim. Etiam ullamcorper eget libero rhoncus sollicitudin.
-					Integer at nibh sagittis dui blandit dictum. Phasellus mattis odio ac finibus blandit. Fusce non dui
-					vitae dui tempor condimentum. Vivamus maximus neque vitae felis ornare, vel posuere nibh eleifend.
-					Donec finibus nunc quis nibh convallis tincidunt ut id tellus. Nunc ornare convallis feugiat.
+				<p>
+					Dans cette section, je vais expliquer comment créer un projet avec une architecture MVC avec
+					CodeIgniter 3. Commençant avec le contrôleur. Voici un exemple de code qui crée un contrôleur de
+					CodeIgniter appelé Pages.
 				</p>
 
-				<h2>Patron de conception</h2>
-				<p>Donec sit amet pretium diam, eu placerat ligula. Nam molestie efficitur condimentum. Suspendisse nec
-					malesuada ligula, et ultricies leo. Proin sodales est sed nisl lacinia, id tincidunt lorem suscipit.
-					Morbi et neque diam. Donec augue turpis, tempus a ex ac, dictum semper elit. Quisque nec eros
-					interdum, ullamcorper est quis, euismod enim. Etiam ullamcorper eget libero rhoncus sollicitudin.
-					Integer at nibh sagittis dui blandit dictum. Phasellus mattis odio ac finibus blandit. Fusce non dui
-					vitae dui tempor condimentum. Vivamus maximus neque vitae felis ornare, vel posuere nibh eleifend.
-					Donec finibus nunc quis nibh convallis tincidunt ut id tellus. Nunc ornare convallis feugiat.
+				<pre class="language-php">
+					<code>class Pages extends CI_Controller{
+	public function view($page = 'home')
+	{
+		if (!file_exists(APPPATH.'views/pages/'.$page.'.php')) 
+		{
+			show_404();
+		} 
+		
+		$data['title'] = ucfirst($page);
+		
+		$this->load->view('templates/header', $data);
+		$this->load->view('pages/'.$page, $data);
+		$this->load->view('templates/footer', $data);
+	}
+}</code>
+				</pre>
+
+				<p>
+					Cela créer une classe nommée <code>Pages</code> avec une fonction publique <code>view</code>. Cette
+					classe est un enfant de la
+					classe <code>CI_Controller</code> ce qui veut dire qu'on a accès a toutes les fonctions et variables
+					définit dans
+					cette classe parent tel que <code>$this->load->view('pages/'.$page, $data);</code>. Cette dernière
+					fonction va rechercher le fichier situé à pages/home.php et va l'envoyer le tableau de donnée
+					<code>$data</code>
+					qui contient le mot 'Home' dans la clé 'title'. Cette clé devient une variable nommée
+					<code>$title</code>. Voici le contenu du fichier home.php et la résultante de la page web.
 				</p>
+
+				<pre class="language-php">
+					<code>&#x3C;h2&#x3E;Welcome to the &#x3C;?= $title ?&#x3E; page&#x3C;/h2&#x3E;</code>
+				</pre>
+				<img class="img-fluid border" src="images/CIHomePage.png" alt="">
+
+				<p>
+					Comme vous pouvez voir, il y a une autre donnée en dessous du <code>h2</code> qui contient un
+					symbole
+					de copyright
+					et le mot 2021. Ce contenu provient du fichier templates/footer.php. De plus, le fichier
+					templates/header.php aussi fait partie du code source de la page. Finalement, voici le code source
+					de la page résultante.
+				</p>
+
+				<pre class="language-markup"><code>&#x3C;!DOCTYPE html&#x3E;
+&#x3C;html&#x3E;
+    &#x3C;head&#x3E;
+        &#x3C;meta charset=&#x22;UTF-8&#x22;&#x3E;
+        &#x3C;meta name=&#x22;viewport&#x22; content=&#x22;width=device-width, initial-scale=1&#x22;&#x3E;
+
+        &#x3C;!-- Bootstrap CSS --&#x3E;
+        &#x3C;link href=&#x22;https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css&#x22; rel=&#x22;stylesheet&#x22; integrity=&#x22;sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1&#x22; crossorigin=&#x22;anonymous&#x22;&#x3E;
+
+        &#x3C;title&#x3E;CodeIgniter Tutorial&#x3C;/title&#x3E;
+    &#x3C;/head&#x3E;
+    &#x3C;body&#x3E;        
+		&#x3C;h2&#x3E;Welcome to the Home page&#x3C;/h2&#x3E;
+		&#x3C;em&#x3E;&#x26;copy; 2021&#x3C;/em&#x3E;
+
+		&#x3C;script src=&#x22;https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js&#x22; integrity=&#x22;sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW&#x22; crossorigin=&#x22;anonymous&#x22;&#x3E;&#x3C;/script&#x3E;
+    &#x3C;/body&#x3E;
+&#x3C;/html&#x3E;
+</code></pre>
+
+				<p>
+					Maintenant, regardons un exemple de création d'un modèle avec CodeIgniter 3. On va créer un modèle
+					nommé <code>News_model</code> qui est enfant à la classe <code>CI_Model</code>. Similairement au
+					contrôleur, nous aurons accès
+					aux fonctions et variable du parent.
+				</p>
+
+				<pre class="language-php">
+					<code>class News_model extends CI_Model {
+    
+    public function __construct() {
+        $this->load->database();
+    }
+    
+    public function get_news($slug = FALSE)
+    {
+        if ($slug == FALSE)
+        {
+            $query = $this->db->get('news');
+            return $query->result_array();
+        }
+        
+        $query = $this->db->get_where('news', array('slug' => $slug));
+        return $query->row_array();
+    }
+    
+    public function set_news()
+    {
+        $this->load->helper('url');
+        
+        $slug = url_title($this->input->post('title', 'dash', TRUE));
+        
+        $data = array(
+            'title' => $this->input->post('title'),
+            'slug' => $slug,
+            'text' => $this->input->post('text')
+        );
+        
+        return $this->db->insert('news', $data);
+    }
+}</code>
+				</pre>
+				<p>
+					Commençant avec le constructeur. On peut voir qu'il accède a un objet <code>$load</code> de son
+					parent <code>CI_Model</code>
+					pour charger la base de données. Pour configurer la base de données du projet, c'est très simple. Il
+					y a un fichier dans application/config/database.php qui nous permet de configurer tout ce qu'on a
+					besoin pour accéder les tables de notre base de données. Ça nous permet aussi d'avoir plus qu'une
+					base de données.
+				</p>
+				<p>
+					Maintenant qu'on a chargé la base de données, on peut utiliser plusieurs fonctions incluses dans
+					l'objet <code>$db</code> du parent comme on peut voir dans les fonctions <code>get_news</code> et
+					<code>set_news</code>. Ces fonctions vont être utiles dans le contrôleur <code>News</code>.
+					Regardons ce fichier
+					maintenant.
+				</p>
+
+				<pre class="language-php">
+					<code>class News extends CI_Controller {
+    
+    public function __construct() {
+        parent::__construct();
+        $this->load->model('news_model');
+        $this->load->helper('url_helper');
+    }
+    
+    public function index()
+    {
+        $data['news'] = $this->news_model->get_news();
+        $data['title'] = 'News archive';
+        
+        $this->load->view('templates/header', $data);
+        $this->load->view('news/index', $data);
+        $this->load->view('templates/footer', $data);
+    }
+    
+    public function view($slug = NULL)
+    {
+        $data['news_item'] = $this->news_model->get_news($slug);
+        
+        if (empty($data['news_item']))
+        {
+            show_404();
+        }
+        
+        $data['title'] = $data['news_item']['title'];
+        
+        $this->load->view('templates/header', $data);
+        $this->load->view('news/view', $data);
+        $this->load->view('templates/footer', $data);
+    }
+    
+    public function create()
+    {
+        $this->load->helper('form');
+        $this->load->library('form_validation');
+        
+        $data['title'] = 'Create a news item';
+        
+        $this->form_validation->set_rules('title', 'Title', 'required');
+        $this->form_validation->set_rules('text', 'Text', 'required');
+        
+        if ($this->form_validation->run() == FALSE)
+        {
+            $this->load->view('templates/header', $data);
+            $this->load->view('news/create', $data);
+            $this->load->view('templates/footer', $data);
+        }
+        else
+        {
+            $this->news_model->set_news();
+            $this->load->view('news/success');
+        }
+    }
+}</code>
+				</pre>
+				<p>
+					Dans le constructeur du contrôleur <code>News</code>, on charge le modèle qu'on vient de créer
+					précédemment et
+					l’on charge aussi le helper <code>url_helper</code>. En chargeant le modèle, on peut maintenant
+					accéder les
+					fonctions <code>get_news</code> et <code>set_news</code>. Le helper est très utile pour les pages de
+					vues. Je vais montrer
+					l'utilité du helper dans quelques paragraphes.
+				</p>
+				<p>
+					Maintenant qu'on a fait un survol du modèle et du contrôleur, je vais aller en un peu plus de détail
+					de chaque fonction et je vais montrer un visuel de ce que ça donne. Dans la fonction publique
+					<code>index()</code>, la première ligne est
+					<code>$data['news'] = $this->news_model->get_news();</code>. Cela accède la
+					fonction <code>get_news()</code> de <code>News_model</code> et stoque la valeur de retour dans la
+					variable <code>$data['news']</code> qui va devenir <code>$news</code> dans la page news/index.php.
+					Je vais expliquer ce que fait cette dernière fonction.
+				</p>
+
+				<pre class="language-php">
+					<code>public function get_news($slug = FALSE)
+    {
+        if ($slug == FALSE)
+        {
+            $query = $this->db->get('news');
+            return $query->result_array();
+        }
+        
+        $query = $this->db->get_where('news', array('slug' => $slug));
+        return $query->row_array();
+    }</code>
+				</pre>
+
+				<p>
+					Premièrement, la fonction a deux possibilités de retour. Soit tout les valeurs de la table news si
+					la variable <code>$slug</code> est égale a <code>FALSE</code>. En d'autres mots, il n'y a pas eu de
+					précision quelle rangée de
+					la table news a retourné. La deuxième possibilite de retour est qu'un slug a été précisé donc on
+					recherche ce slug dans la table news et l’on retourne la rangée.
+				</p>
+
+				<p>
+					Ce qui est intéressant dans cette fonction est l'utilisation de l'objet <code>$db</code> qui
+					provient de la
+					classe <code>Database</code> qu'on a chargée lorsqu'on a fait <code>$this->load->database();</code>
+					dans le constructeur de
+					<code>News_model</code>.
+				</p>
+
+				<p>
+					Cette classe de CodeIgniter 3 nous offre plusieurs fonctions utiles pour interagir avec la base de
+					données telle que <code>$query = $this->db->get('news');</code> qui nous retourne toutes les valeurs
+					de la table
+					news. Il y a aussi l'utilisation de <code>$query->result_array();</code> qui nous retourne en forme
+					de tableau
+					PHP les valeurs de la requête MySQL qu'on vient d'exécuter. Voici un visuel de ce tableau PHP.
+				</p>
+
+				<pre class="language-php">
+					<code>
+C:\wamp64\www\CodeIgniter-3\application\models\News_model.php:25:
+array (size=4)
+  0 => 
+    array (size=4)
+      'id' => string '1' (length=1)
+      'title' => string 'VILLAGE ARCADE: Assassin’s Creed: Valhalla learns from the past to create a uniquely polished experience' (length=106)
+      'slug' => string 'village-arcade-assassins-creed-valhalla-learns-from-the-past-to-create-a-uniquely-polished-experience' (length=101)
+      'text' => string 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ac tortor lacinia, luctus nulla nec, mollis augue. Ut vitae dignissim leo. Maecenas aliquet at quam sed porta. Quisque mollis tellus nec arcu imperdiet, et sollicitudin enim placerat. Fusce consequat imperdiet elit, ut porta nibh viverra vitae. Donec luctus libero a luctus fringilla. In varius finibus ante, at pretium risus consequat eget. Nullam molestie elit in nulla tincidunt tempus. Integer felis metus, maximus in maximus in, sodales vit'... (length=645)
+  1 => 
+    array (size=4)
+      'id' => string '2' (length=1)
+      'title' => string 'Everything you need to know about COVID-19 in Alberta on Saturday, Jan. 30' (length=74)
+      'slug' => string 'alberta-covid-coronavirus-january-30' (length=36)
+      'text' => string 'In et tortor rhoncus, vehicula libero a, commodo diam. Quisque sed sagittis erat, non ullamcorper quam. Nulla neque ante, ultrices at tempus id, suscipit eget turpis. Proin cursus id dolor ut tristique. Donec vestibulum, erat eu semper cursus, est augue tincidunt nisl, quis cursus odio lacus in nisl. Sed dui est, malesuada ut lorem a, condimentum varius felis. Sed vitae porttitor ligula, semper tempor ante. Donec eget congue ante, ut blandit magna. Nullam in ornare felis. Aliquam lacinia, nulla a pharetra o'... (length=893)
+  2 => 
+    array (size=4)
+      'id' => string '3' (length=1)
+      'title' => string 'Quebec may ease restrictions on stores as of Feb. 8, Legault says' (length=65)
+      'slug' => string 'quebec-may-ease-restrictions-on-stores-as-of-feb-8-legault-says' (length=63)
+      'text' => string 'Curabitur vitae purus ut enim faucibus posuere sed a enim. Etiam rhoncus nisl non leo vestibulum, in molestie dolor condimentum. Curabitur cursus sapien quis lorem fermentum suscipit. Integer accumsan est quis pellentesque porttitor. Fusce velit metus, dapibus sodales sollicitudin nec, accumsan in libero. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent id nulla id lorem elementum convallis. Fusce eu lobortis diam. Duis pretium tempor molestie. Aliquam nec'... (length=822)
+  3 => 
+    array (size=4)
+      'id' => string '4' (length=1)
+      'title' => string 'New public health order will force most travellers to Manitoba to quarantine — but there are exceptions' (length=105)
+      'slug' => string 'New-public-health-order-will-force-most-travellers-to-Manitoba-to-quarantine-but-there-are-exceptions' (length=101)
+      'text' => string 'Sed elit quam, imperdiet sed congue quis, viverra sit amet nibh. Curabitur fermentum erat magna, id facilisis felis dapibus in. Curabitur suscipit risus eu ligula lobortis consequat. Maecenas sed metus id enim dapibus ullamcorper. Praesent ut nibh vulputate, eleifend est sollicitudin, pharetra tellus. Aenean sit amet varius felis, sit amet dictum libero. Nunc id sodales ipsum. Sed elit diam, volutpat eu metus vulputate, rutrum interdum urna. Morbi metus lacus, viverra id lorem ac, scelerisque euismod lorem.'... (length=752)
+					</code>
+				</pre>
+
+				<p>
+					Il y a aussi l'utilisation de
+					<code>$query = $this->db->get_where('news', array('slug' => $slug));</code> si l'on
+					veut recevoir un élément spécifique de la table news. Voici un visuel de la valeur
+					<code>$query->row_array();</code> lorsque je cherche pour le slug
+					'quebec-may-ease-restrictions-on-stores-as-of-feb-8-legault-says'.
+				</p>
+				<pre class="language-php">
+					<code>C:\wamp64\www\CodeIgniter-3\application\models\News_model.php:30:
+array (size=4)
+  'id' => string '3' (length=1)
+  'title' => string 'Quebec may ease restrictions on stores as of Feb. 8, Legault says' (length=65)
+  'slug' => string 'quebec-may-ease-restrictions-on-stores-as-of-feb-8-legault-says' (length=63)
+  'text' => string 'Curabitur vitae purus ut enim faucibus posuere sed a enim. Etiam rhoncus nisl non leo vestibulum, in molestie dolor condimentum. Curabitur cursus sapien quis lorem fermentum suscipit. Integer accumsan est quis pellentesque porttitor. Fusce velit metus, dapibus sodales sollicitudin nec, accumsan in libero. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent id nulla id lorem elementum convallis. Fusce eu lobortis diam. Duis pretium tempor molestie. Aliquam nec'... (length=822)</code>
+				</pre>
+
+				<p>
+					Finalement, on a couvert la fonction pour recevoir des éléments de la table news. Cette fonction est
+					utilisée dans la fonction <code>index()</code> et <code>view()</code> du contrôleur
+					<code>News</code>. Je vais vous montrer le code des
+					pages de vue et l'affichage final des pages d'index et view commençant par la page news/index.php.
+				</p>
+
+				<pre class="language-php">
+					<code>&#x3C;h1&#x3E;
+    &#x3C;?= $title; ?&#x3E;
+&#x3C;/h1&#x3E;
+&#x3C;h3&#x3E;
+    &#x3C;a href=&#x22;&#x3C;?php echo site_url(&#x27;news/create&#x27;); ?&#x3E;&#x22;&#x3E;
+        Create article
+    &#x3C;/a&#x3E;
+&#x3C;/h3&#x3E;
+&#x3C;?php foreach ($news as $news_item) : ?&#x3E;
+    &#x3C;h3&#x3E;
+        &#x3C;?php echo $news_item[&#x27;title&#x27;]; ?&#x3E;
+    &#x3C;/h3&#x3E;
+    &#x3C;div class=&#x22;main&#x22;&#x3E;
+        &#x3C;?php echo $news_item[&#x27;text&#x27;]; ?&#x3E;
+    &#x3C;/div&#x3E;
+    &#x3C;p&#x3E;
+        &#x3C;a href=&#x22;&#x3C;?php echo site_url(&#x27;news/&#x27; . $news_item[&#x27;slug&#x27;]); ?&#x3E;&#x22;&#x3E;
+            View article
+        &#x3C;/a&#x3E;
+    &#x3C;/p&#x3E;
+&#x3C;?php endforeach; ?&#x3E;</code>
+				</pre>
+
+				<p>
+					La première chose dont je veux mentionner est le helper url_helper qu'on utilise à travers la
+					fonction <code>site_url('news/create');</code> et
+					<code>site_url('news/' . $news_item['slug']);</code>. On avait chargé cette
+					classe dans le contrôleur News. Voici le code de cette fonction.
+				</p>
+
+				<pre class="language-php">
+					<code>function site_url($uri = '', $protocol = NULL)
+{
+	return get_instance()->config->site_url($uri, $protocol);
+}</code>
+				</pre>
+
+				<p>
+					Cette fonction retourne une URL basée sur le chemin de base du projet. Dans mon cas, ça retourne
+					<code>http://localhost/CodeIgniter-3/news/create</code> et
+					<code>http://localhost/CodeIgniter-3/news/alberta-covid-coronavirus-january-30</code>
+					respectivement. Comme on peut constater aussi, le tableau de données qu'on a reçu grâce à la
+					fonction <code>get_news()</code> a été stoqué dans la variable <code>$news</code>.
+				</p>
+
+				<p>
+					Finalement, voici un visuel de la page résultante de news/index.php avec son code source résultant.
+				</p>
+
+				<pre class="language-markup">
+					<code>&#x3C;!DOCTYPE html&#x3E;
+&#x3C;html&#x3E;
+&#x3C;head&#x3E;
+    &#x3C;meta charset=&#x22;UTF-8&#x22;&#x3E;
+    &#x3C;meta name=&#x22;viewport&#x22; content=&#x22;width=device-width, initial-scale=1&#x22;&#x3E;
+
+    &#x3C;!-- Bootstrap CSS --&#x3E;
+    &#x3C;link href=&#x22;https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css&#x22; rel=&#x22;stylesheet&#x22;
+        integrity=&#x22;sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1&#x22; crossorigin=&#x22;anonymous&#x22;&#x3E;
+
+    &#x3C;title&#x3E;CodeIgniter Tutorial&#x3C;/title&#x3E;
+&#x3C;/head&#x3E;
+
+&#x3C;body&#x3E;
+
+    &#x3C;h1&#x3E;
+        News archive
+    &#x3C;/h1&#x3E;
+    &#x3C;h3&#x3E;
+        &#x3C;a href=&#x22;http://localhost/CodeIgniter-3/news/create&#x22;&#x3E;
+            Create article
+        &#x3C;/a&#x3E;
+    &#x3C;/h3&#x3E;
+    &#x3C;h3&#x3E;
+        VILLAGE ARCADE: Assassin&#x2019;s Creed: Valhalla learns from the past to create a uniquely polished experience
+    &#x3C;/h3&#x3E;
+    &#x3C;div class=&#x22;main&#x22;&#x3E;
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ac tortor lacinia, luctus nulla nec, mollis
+        augue. Ut vitae dignissim leo. Maecenas aliquet at quam sed porta. Quisque mollis tellus nec arcu imperdiet, et
+        sollicitudin enim placerat. Fusce consequat imperdiet elit, ut porta nibh viverra vitae. Donec luctus libero a
+        luctus fringilla. In varius finibus ante, at pretium risus consequat eget. Nullam molestie elit in nulla
+        tincidunt tempus. Integer felis metus, maximus in maximus in, sodales vitae nisi. Praesent non erat vel libero
+        rhoncus sagittis at sed quam. Duis eget sodales mauris. Morbi tempus quis libero sed vulputate.
+    &#x3C;/div&#x3E;
+    &#x3C;p&#x3E;
+        &#x3C;a
+            href=&#x22;http://localhost/CodeIgniter-3/news/village-arcade-assassins-creed-valhalla-learns-from-the-past-to-create-a-uniquely-polished-experience&#x22;&#x3E;
+            View article
+        &#x3C;/a&#x3E;
+    &#x3C;/p&#x3E;
+
+    &#x3C;h3&#x3E;
+        Everything you need to know about COVID-19 in Alberta on Saturday, Jan. 30
+    &#x3C;/h3&#x3E;
+    &#x3C;div class=&#x22;main&#x22;&#x3E;
+        In et tortor rhoncus, vehicula libero a, commodo diam. Quisque sed sagittis erat, non ullamcorper quam. Nulla
+        neque ante, ultrices at tempus id, suscipit eget turpis. Proin cursus id dolor ut tristique. Donec vestibulum,
+        erat eu semper cursus, est augue tincidunt nisl, quis cursus odio lacus in nisl. Sed dui est, malesuada ut lorem
+        a, condimentum varius felis. Sed vitae porttitor ligula, semper tempor ante. Donec eget congue ante, ut blandit
+        magna. Nullam in ornare felis. Aliquam lacinia, nulla a pharetra ornare, lorem nibh luctus tortor, quis
+        vulputate leo turpis quis lectus. Fusce sodales commodo nulla vitae tempus. Curabitur viverra nisl nec magna
+        mollis, in aliquet lectus ultrices. Mauris ligula risus, semper quis semper euismod, auctor sed erat. Cras
+        volutpat magna ac metus viverra tempor. Phasellus ut lacus lacus. Nam a lacus sollicitudin, aliquet tortor sed,
+        finibus turpis.
+    &#x3C;/div&#x3E;
+    &#x3C;p&#x3E;
+        &#x3C;a href=&#x22;http://localhost/CodeIgniter-3/news/alberta-covid-coronavirus-january-30&#x22;&#x3E;
+            View article
+        &#x3C;/a&#x3E;
+    &#x3C;/p&#x3E;
+
+    &#x3C;h3&#x3E;
+        Quebec may ease restrictions on stores as of Feb. 8, Legault says
+    &#x3C;/h3&#x3E;
+    &#x3C;div class=&#x22;main&#x22;&#x3E;
+        Curabitur vitae purus ut enim faucibus posuere sed a enim. Etiam rhoncus nisl non leo vestibulum, in molestie
+        dolor condimentum. Curabitur cursus sapien quis lorem fermentum suscipit. Integer accumsan est quis pellentesque
+        porttitor. Fusce velit metus, dapibus sodales sollicitudin nec, accumsan in libero. Class aptent taciti sociosqu
+        ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent id nulla id lorem elementum convallis.
+        Fusce eu lobortis diam. Duis pretium tempor molestie. Aliquam nec diam non augue finibus rutrum. Cras tellus
+        ante, posuere sed erat gravida, euismod placerat ante. Maecenas pharetra est turpis, vitae egestas nulla
+        tristique faucibus. Suspendisse ultricies orci at tincidunt dapibus. Nunc eleifend eu tellus eget pharetra.
+        Aliquam erat volutpat. Etiam lobortis gravida congue.
+    &#x3C;/div&#x3E;
+    &#x3C;p&#x3E;
+        &#x3C;a href=&#x22;http://localhost/CodeIgniter-3/news/quebec-may-ease-restrictions-on-stores-as-of-feb-8-legault-says&#x22;&#x3E;
+            View article
+        &#x3C;/a&#x3E;
+    &#x3C;/p&#x3E;
+
+    &#x3C;h3&#x3E;
+        New public health order will force most travellers to Manitoba to quarantine &#x2014; but there are exceptions
+    &#x3C;/h3&#x3E;
+    &#x3C;div class=&#x22;main&#x22;&#x3E;
+        Sed elit quam, imperdiet sed congue quis, viverra sit amet nibh. Curabitur fermentum erat magna, id facilisis
+        felis dapibus in. Curabitur suscipit risus eu ligula lobortis consequat. Maecenas sed metus id enim dapibus
+        ullamcorper. Praesent ut nibh vulputate, eleifend est sollicitudin, pharetra tellus. Aenean sit amet varius
+        felis, sit amet dictum libero. Nunc id sodales ipsum. Sed elit diam, volutpat eu metus vulputate, rutrum
+        interdum urna. Morbi metus lacus, viverra id lorem ac, scelerisque euismod lorem. Vestibulum et dui accumsan,
+        bibendum turpis quis, luctus leo. Aliquam porta et urna sed dignissim. In sodales accumsan leo quis consequat.
+        Donec porttitor neque vel leo hendrerit, vel aliquet nulla tempor. In hac habitasse platea dictumst.
+    &#x3C;/div&#x3E;
+    &#x3C;p&#x3E;
+        &#x3C;a
+            href=&#x22;http://localhost/CodeIgniter-3/news/New-public-health-order-will-force-most-travellers-to-Manitoba-to-quarantine-but-there-are-exceptions&#x22;&#x3E;
+            View article
+        &#x3C;/a&#x3E;
+    &#x3C;/p&#x3E;
+
+    &#x3C;em&#x3E;&#x26;copy; 2021&#x3C;/em&#x3E;
+    &#x3C;script src=&#x22;https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js&#x22;
+        integrity=&#x22;sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW&#x22;
+        crossorigin=&#x22;anonymous&#x22;&#x3E;&#x3C;/script&#x3E;
+&#x3C;/body&#x3E;
+
+&#x3C;/html&#x3E;</code>
+				</pre>
+
+				<img class="img-fluid border" src="images/news_index_php.png" alt="La page d'index du controlleur news">
+
+				<p>
+					La page de view est très similaire, mais on voit qu'un résultat de la table news. Voici le code du
+					fichier news/view.php et un visuel de la page résultante.
+				</p>
+
+				<pre class="language-php">
+					<code>&#x3C;?php
+echo &#x27;&#x3C;h2&#x3E;&#x27;.$news_item[&#x27;title&#x27;].&#x27;&#x3C;/h2&#x3E;&#x27;;
+echo &#x27;&#x3C;p&#x3E;&#x27;.$news_item[&#x27;text&#x27;].&#x27;&#x3C;/p&#x3E;&#x27;;</code>
+				</pre>
+
+				<img class="img-fluid border" src="images/news_view_php.png" alt="La page view du controlleur news">
+
+				<p>
+					Passons à la dernière fonction du contrôleur <code>News</code> pour conclure ce projet MVC. Voici le
+					code de la
+					fonction publique <code>create()</code>.
+				</p>
+
+				<pre class="language-php">
+					<code>public function create()
+{
+	$this->load->helper('form');
+	$this->load->library('form_validation');
+	
+	$data['title'] = 'Create a news item';
+	
+	$this->form_validation->set_rules('title', 'Title', 'required');
+	$this->form_validation->set_rules('text', 'Text', 'required');
+	
+	if ($this->form_validation->run() == FALSE)
+	{
+		$this->load->view('templates/header', $data);
+		$this->load->view('news/create', $data);
+		$this->load->view('templates/footer', $data);
+	}
+	else
+	{
+		$this->news_model->set_news();
+		$this->load->view('news/success');
+	}
+}</code>
+				</pre>
+
+				<p>
+					Dans cette fonction, on observe l'utilisation de deux nouveaux éléments qui proviennent de
+					CodeIgniter 3. Le helper <code>form</code> et la librairie <code>form_validation</code>. Des helpers
+					dans CodeIgniter sont
+					utilisés dans les fichiers de vue et les librairies sont utiles dans un contexte de programmation
+					orientée objet tel que dans les fichiers de contrôleurs et modèles.
+				</p>
+
+				<p>
+					Débutons avec la librairie form_validation. On voit l'utilisation de la fonction
+					<code>set_rules()</code> et
+					<code>run()</code> dans la fonction <code>create()</code>. La fonction <code>set_rules()</code> sert
+					à mettre une contrainte de validation
+					sur un champ d'entrée situé dans un formulaire HTML. Par exemple, lorsqu'on fait
+					<code>$this->form_validation->set_rules('title', 'Title', 'required');</code>, la fonction va
+					chercher le champ
+					avec l'attribut HTML name mis a 'title', le deuxième paramètre de la fonction est le nom du champ de
+					manière lisible pour un humain, dans cet exemple je trouvais que 'Title' était plus beau que
+					'title'. Dans le troisième paramètre de la fonction, on met la contrainte qui est 'required', cela
+					veut dire que le champ est obligatoire pour soumettre le formulaire HTML. CodeIgniter 3 nous offre
+					une liste extensive de contraintes avec cette librairie. Vous pouvez voir cette liste en accédant ce
+					site web :
+					<a target="_blank"
+						href="https://codeigniter.com/userguide3/libraries/form_validation.html#rule-reference">https://codeigniter.com/userguide3/libraries/form_validation.html#rule-reference</a>
+				</p>
+
+				<p>
+					La fonction <code>set_rules()</code> exécute toutes les vérifications pour confirmer que le
+					formulaire respecte
+					les contraintes qu'on a placées avec <code>set_rules()</code>. Dans mon code, si la fonction nous
+					retourne <code>FALSE</code>,
+					qui veut dire qu’une des contraintes n'a pas été respectée, on retourne la page news/create.php. Par
+					contre, si la validation a réussi, on renvoie l'utilisateur a la page news/success.php.
+				</p>
+
+				<p>Analysons le fichier news/create.php maintenant.</p>
+
+				<pre class="language-php">
+					<code>&#x3C;h1&#x3E;
+&#x3C;?= $title; ?&#x3E;
+&#x3C;/h1&#x3E;
+&#x3C;?php echo validation_errors(); ?&#x3E;
+
+&#x3C;?php echo form_open(&#x27;news/create&#x27;);?&#x3E;
+
+    &#x3C;label for=&#x22;title&#x22;&#x3E;Title&#x3C;/label&#x3E;
+    &#x3C;input type=&#x22;text&#x22; name=&#x22;title&#x22;/&#x3E;&#x3C;br /&#x3E;
+
+    &#x3C;label for=&#x22;text&#x22;&#x3E;Text&#x3C;/label&#x3E;
+    &#x3C;textarea name=&#x22;text&#x22;&#x3E;&#x3C;/textarea&#x3E;&#x3C;br /&#x3E;
+
+    &#x3C;input type=&#x22;submit&#x22; name=&#x22;submit&#x22; value=&#x22;Create news item&#x22; /&#x3E;
+
+&#x3C;/form&#x3E;</code>
+				</pre>
+
+				<p>
+					J'avais précisé que les librairies sont généralement utilisées dans un contrôleur ou un modèle, mais
+					voici un exemple où il est utilisé dans une page de vue. La fonction
+					<code>validation_errors()</code> nous permet
+					de recevoir les messages d'erreur des contraintes qui n'ont pas été respectées.
+				</p>
+
+				<p>
+					Finalement, on utilise le helper <code>form</code> avec la fonction
+					<code>form_open('news/create')</code>. Cela créer un
+					formulaire HTML avec un URL basée sur le chemin de base du projet. Il y a la possibilité de préciser
+					l'action, les attributs HTML et s'il y a des champs invisibles dans le formulaire. J'ai utilisé la
+					fonction d'une manière très simple.
+				</p>
+
+				<p>
+					Voici un exemple visuel de l'utilisation de ce formulaire pour créer un élément dans la table news.
+					Je vais démontrer ce qui arrive dans un cas d'une erreur de validation et ce qui se passe lorsque
+					toutes les valeurs sont valides.
+				</p>
+
+				<img class="img-fluid border" src="images/news_create_php.gif"
+					alt="Exemple visuel d'utilisation du formulaire news/create">
+
+				<footer class="major" style="padding-top: 40px">
+					<h2>Conclusion</h2>
+				</footer>
+				<p>
+					Cela conclut mon rapport technique. J'ai approfondi ma connaissance de PHP en apprenant un nouveau
+					cadriciel nommé CodeIgniter 3 qui est très simple a installé et a utilise. Mon but avec le projet
+					MVC était de faire un survol pratique du cadriciel au lieu d'aller à travers la documentation page
+					par page. J'espère que cela vous a donné une bonne compréhension de l'utilisation de CodeIgniter 3.
+				</p>
+
+				<p>
+					J'ai aussi approfondi mon expertise avec l'éditeur de texte Visual Studio Code. J'ai appris à le
+					configurer et je suis devenu significativement meilleur avec Vim grâce au module d'extension que
+					j'ai installé.
+				</p>
+
 			</article>
 
 		</div>
@@ -175,7 +811,7 @@
 		<div id="copyright">
 			<ul>
 				<li>&copy; Yasser Soliman</li>
-				<li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
+				<li>Design: <a target="_blank" href="https://html5up.net">HTML5 UP</a></li>
 			</ul>
 		</div>
 
@@ -190,6 +826,7 @@
 	<script src="assets/js/breakpoints.min.js"></script>
 	<script src="assets/js/util.js"></script>
 	<script src="assets/js/main.js"></script>
+	<script src="assets/js/prism.js"></script>
 
 </body>
 
